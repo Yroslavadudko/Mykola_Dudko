@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mykoladudko</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox">
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+            <ul class="menubox">
+                <li><a class="menu-item" href="#Моє_Життя">Моє Життя</a></li>
+                <li><a class="menu-item" href="#Як_Живу">Хобі</a></li>
+                <li><a class="menu-item" href="#хочу_Знати">хочу Знати</a></li>
+                <li><a class="menu-item" href="#contact">Контакти</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul class="header">
+                <li class="logo">
+
+                    <a href="./image/276995181_2318894338263794_3479077228525623771_n.jpg">
+                        <img src="./image/276995181_2318894338263794_3479077228525623771_n.jpg" alt="m" width="60">
+                    </a>
+
+
+                </li>
+                <li>
+                    <form class="example" action="http://www.google.com/search?q=">
+                        <input type="text" name="search" class="search" placeholder="Google">
+                        <button type="submit">
+                            <i class="fa fa-search">search</i>
+                        </button>
+                    </form>
+                </li>
+
+                <li class="tel">
+
+                    <a href="tel:+380981027268">
+                        <img src="./image/telephone.svg" alt="tel" width="30">
+                    </a>
+
+                </li>
+                <li class="skype">
+
+                    <a href="skype:dudko_78?userinfo">
+                        <img src="./image/images.jpeg" alt="skype" width="30">
+                    </a>
+
+
+                </li>
+                <li class="mailto">
+
+                    <a href="mailto:dudkomykola@icloud.com">
+                        <img src="./image/Mail.svg" alt="email" width="30">
+                    </a>
+
+                </li>
+
+                <li class="facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100004297503863">
+                        <img src="./image/facebook.svg" alt="fac" width="30">
+                    </a>
+                </li>
+                <li class="telegram">
+                    <a href="https://telegram.me/dudko_78">
+                        <img src="./image/telegram.svg" alt="tg" width="30">
+                    </a>
+                </li>
+                <li class="viber">
+                    <a href="viber://chat?number=%2B380981027268">
+                        <img src="./image/png-transparent-viber-messaging-apps-instant-messaging-iphone-skype-purple-violet-logo.png"
+                            alt="vb" width="30">
+                    </a>
+                </li>
+                <li class="strava">
+                    <a href="https://www.strava.com/athletes/15704091">
+                        <img src="./image/png-clipart-strava-running-android-android-orange-logo.png" alt="st"
+                            width="30">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="header-block">
+                    <div class="title-block">
+                        <h1>Mykola Dudko</h1>
+                    </div>
+                    <div class="userpic">
+                        <h2 hidden>MD</h2>
+                        <img src="./image/Mail.svg" alt="i,m">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- <div class="nav">
+                    <ul>
+                        <li><a href="#Хто Я">Хто Я</a></li>
+                        <li><a href="#Як Живу">Як Живу</a></li>
+                        <li><a href="#МоЇ контакти">Мої контакти</a></li>   
+                    </ul>
+                </div> -->
+            <ul class="content-wrapper">
+                <li>
+                    <h3>Моє життя</h3>
+                    <p> Привіт. Мене звати Микола Дудко. Мені наче вже 44 роки.
+                        Вчився в школі 8 років, щє в ПТУ та Інфізі (інститут фізкультури), маю професію
+                        тренер-викладач фіскультури. Займався професіонально спортом так і опинився в інфізі.
+                        Спорт накрився як і робота тренера-викладача.</p>
+                </li>
+                <li>
+                    <h3>Як Живу</h3>
+                    <p>Я жив собі особливо без турбот
+                        до 12 липня 2021 коли наша молодша донька Ярослава не захворіла
+                        на цукровий діабет тип1. Я раніше був IT рівня 0-5% але
+                        життя змуcило зайнятисяцим питтаням, бо необхідно відслідковувати
+                        рівень цукру девайсами та писати в xcode app та прописувати це
+                        в Nightscout c допомогою Heroku, MongoDB та GitHab. Рівень
+                        лікування та мониторингу ЦД1 останніми роками вийшов на новий
+                        рівень та дає можливість створити петлю контролю <b>ШТУЧНОЇ
+                            ПІДШЛУНКОВОЇ ЗАЛОЗИ - FreeApps</b> . Це все треба прописати кодом да
+                        підключити в петлю сенсор моніторингу CGM, інсулінову помпу
+                        Mednronic 512 c miniPC-Orange, смартфон IOS та програмою
+                        управління xDrip4iOS або Spaky через сервер Nightscout. Далі при
+                        внесенні данних по кількості вживання вуглеводів петля дає команду
+                        для мікроінєкцій болюсного інсуліну Novorapid та виключаючи інєкції базалу. На весні 23 року
+                        всежтаки
+                        надумав вчитися IT QA. Побачимо як вийде.</p>
+
+                </li>
+            </ul>
+        </section>
+        <section class="sidebar">
+
+            <h3>Знаю</h3>
+            <ul class="Знаю">
+                <li><a href="https://www.freestyle.abbott/us-en/products/freestyle-libre-2.html">Free Style
+                        Libra2</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://yroslava.herokuapp.com/">Nightscout</a></li>
+                <li><a href="https://railway.app/account">Railway</a></li>
+                <li><a href="https://www.heroku.com">Heroku</a></li>
+                <li><a href="https://cloud.mongodb.com/v2/61262a62d013aa65f4fd20e5#/clusters">MongoDB</a>
+                </li>
+                <li><a
+                        href="https://xdrip4ios.readthedocs.io/en/latest/install/build/?fbclid=IwAR0NYSyNEE9TFLQgyKm-EJeTQimfJa27HZ58bKofsmHw-XjW4_t7SpuX-VU">xDrip4iO5</a>
+                </li>
+                <li><a href="https://www.loopandlearn.org/freeaps-x/">FreeAPS X</a></li>
+                <li>Xcode</li>
+                <li><a href="https://crowdin.com/profile">Crowdin</a></li>
+            </ul>
+            <h3>хочу Знати</h3>
+            <ul class="хочу_Знати">
+                <li>QA</li>
+                <li>Swift</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ul>
+
+
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
+    <footer>
+        <address>
+            <ul class="contact">
+                <li>
+                    <a href="tel:+380981027268">
+                        <img src="./image/telephone.svg" alt="tel" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:dudkomykola@icloud.com">
+                        <img src="./image/Mail.svg" alt="email" width="30">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/iZQGquxoamKVCprR7?coh=178571&entry=tt">
+                        <img src="./image/google-maps.svg" alt="моя адреса" width="30">
+                    </a>
+                </li>
+
+            </ul>
+        </address>
+    </footer>
+</body>
+
+</html>

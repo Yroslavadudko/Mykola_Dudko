@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital@0;1&display=swap');
+
+p {
+    text-indent: 20px;
+}
+
+.header {
+    border: yellow;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu-btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right:30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+   
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFF00;
+    transition-duration: .25s;
+}
+.menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+   
+.menubox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 10px;
+    left: -100%;
+    width: 200px;
+    height: 50%;
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFFF00;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 1;
+}
+   
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+.menu-item:hover {
+    background-color: #CFD8DC;
+}
+   
+   
+#menu-toggle {
+    opacity: 0;
+}
+   
+#menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox {
+    visibility: visible;
+    left: 0;
+}
+/* .menu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 2px 0 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 25px;
+    list-style: none;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.menu a {
+    display: block;
+    padding: 8px 10px;
+    color: #000;
+    text-decoration: none;
+} */
+.logo {
+    margin-right: 30px; 
+    margin-left: 20px;
+    border-radius: 8px;
+}
+/* .menu a,
+.menu .active {
+    display: block;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: .27em;
+    color: #250ce0;
+    background-color: #FFFF00;
+    border-radius: 8px;
+} */
+.tel {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 54%;
+    margin-right: 20px;  
+}
+.tel img {
+    border-radius: 8px;
+}
+.skype {
+    margin-right: 20px;
+}
+.skype img {
+    border-radius: 8px;
+}
+.mailto {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 20px;
+}
+.mailto img {
+    border-radius: 8px;
+}
+.facebook {
+    margin-right: 20px;
+}
+.facebook img {
+    border-radius: 8px;
+}
+.telegram {
+    margin-right: 20px;
+}
+.telegram img {
+    border-radius: 8px;
+}
+.viber {
+    margin-right: 20px;
+}
+.viber img {
+    border-radius: 8px;
+}
+.strava {
+    margin-right: 20px;
+}
+.strava img {
+    border-radius: 8px;
+}
+
+
+body{
+    font-family:'Raleway', sans-serif;
+    background: url('https://www.onlygfx.com/wp-content/uploads/2022/03/grunge-flag-ukraine-background.png')no-repeat center center / cover;
+    padding: 55px 0; 
+    background-color: #8ebf42;
+}
+form {
+    position: relative;
+    margin: 1em;
+}
+form.example input[type=text] {
+    
+    display: block;
+    padding: 0 1.5em ;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    float: left;
+    width: 20;
+    height: 3em;
+    line-height: 3em;
+    background: yellow;
+    color: blue;
+}
+form.example button {
+    position: absolute;
+    height: 3em;
+    float: right;
+    border-bottom-right-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    width: 50%;
+    padding: 0 1.5em ;
+    background: #2196F3;
+    color: yellow;
+    font-size: 12px;
+    border: 1px solid grey;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+form.example button:hover {
+    background: #0b7dda;
+}
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 800px;
+    min-height: 500px;
+    border: 10px solid rgb(34, 30, 30);
+    margin: 0 auto;
+    background: #8c8484;
+}
+
+.header-block{
+    display: flex;
+    height: 150px;
+}
+.title-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-size: 50px;
+    background: url(https://dgtzuqphqg23d.cloudfront.net/3UPvzkSdxA2xMNnC3FEu6tad2laGaF2LdGyzPTMxyPI-2048x1536.jpg) no-repeat center center / cover;
+    color: #FFFF00;
+    margin-right: 10px;
+}
+.title-block_after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #70d512;
+    opacity: 0.5;
+}
+.title{
+    position: relative;
+    z-index: 1;
+}
+.userpic{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    background: url(https://media.licdn.com/dms/image/D5635AQHyeXtENj70GQ/profile-framedphoto-shrink_400_400/0/1683115134138?e=1684134000&v=beta&t=_1hB3MIqQztMfeuC8Z5X-6-qmGjmYaPTPsOTdGJB8lY)no-repeat center center / cover;
+}
+
+.nav ul{
+    display: flex;
+    width:100%;
+    justify-content: center; 
+    background: rgb(247, 244, 244);
+    margin: 10px 0;
+}
+
+
+.nav li a{
+    display: flex;
+    padding: 20px;
+    text-decoration: none; 
+    color: #404040;
+    font-weight: 700;
+    border-right: 1px solid #d1d1d1;
+    transition: background 1s ease 0.2;
+}
+.nav li a:hover{
+    background: rgb(196,196,196)
+}
+.content-wrapper{
+    display: flexbox; 
+}
+.contect{
+    width: 70%;
+    padding: 20px;
+}
+.contect p{
+    line-height: 20px;
+}
+.sidebar{
+    
+    display: flex;
+    padding: 20px;
+    width: 30%;
+    text-align: right;
+}
+.Знаю li{
+    padding: 10px 0;
+    transition: transform .5s ease;
+}
+.Знаю li:hover{
+    transform: translateX(10px);
+}
+.хочу_Знати li{
+    padding: 10px 0;
+    transition: transform .5s ease;
+}
+.хочу_Знати li:hover{
+    transform: translateX(10px) ;
+}
+footer {
+    border: yellow;
+    display: flex;
+
+}
+.contact {
+    margin-left: 100px;
+    padding: 5px;
+}
